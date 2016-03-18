@@ -4,7 +4,7 @@ var router = require('./routes.js');
 
 var port = 3000;
 
-app.use(express.static('client'));
+app.use(express.static('client/pages'));
 
 //routes to be handled in routes.js file
 router.routes(app);
