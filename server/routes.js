@@ -4,4 +4,9 @@ exports.routes = function(app) {
     res.send('public get');
   });
 
+  //catch all route
+  app.get('*', function(req, res) {
+    res.render('index.html');
+  });
+
 };
