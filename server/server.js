@@ -6,8 +6,8 @@ var ejs = require('ejs');
 
 var port = 3000;
 
-app.use(express.static(path.join(__dirname, '../client/pages')));
-app.set('views', path.join(__dirname, '../client/pages'));
+app.use(express.static(path.join(__dirname, '../client')));
+app.set('views', path.join(__dirname, '../client'));
 app.engine('html', ejs.renderFile);
 app.set('view engine', 'html');
 

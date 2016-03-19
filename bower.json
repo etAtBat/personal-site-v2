@@ -1,0 +1,22 @@
+{
+  "name": "personal-site",
+  "description": "personal website egan tamashiro",
+  "main": "index.js",
+  "authors": [
+    "egan tamashiro"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "egan",
+    "tamashiro"
+  ],
+  "homepage": "https://github.com/etAtBat/personal-site",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
