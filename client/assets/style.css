@@ -11,3 +11,16 @@
   overflow: auto;
   padding-top:55px;
 }
+
+.largeImage {
+  background-image:url(golden-gate-bridge-39929-1920x1200.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 700px;
+  min-width: none;
+}
+
+.container-fluid {
+  padding: 0;
+}
