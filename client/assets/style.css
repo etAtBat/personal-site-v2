@@ -69,6 +69,30 @@
   opacity: 1;
 }
 
+.footer {
+  height: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+.github, .linkedin {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+.linkedin {
+  margin-left: 20px;
+}
+
+.github a {
+  height: 100%;
+}
+
+.logo {
+  height: 60px; 
+}
+
 .container-fluid {
   padding: 0;
 }
