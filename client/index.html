@@ -13,6 +13,8 @@
     <script type="text/javascript" src="./js/app.js"></script>
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <!--JS-->
+    <script type="text/javascript" src="./js/main.js"></script>
   </head>
   <body ng-controller="mainPageController">
     <div class="container-fluid">
@@ -30,9 +32,9 @@
           </div><!--#navbar-header-->
           <div class="collapse navbar-collapse pull-right" id="navigationbar">
             <ul class="nav navbar-nav">
-              <li class="active"><a>About</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Contact Me</a></li>
+              <li class="topnav"><a href="#About">About</a></li>
+              <li class="topnav"><a href="#Portfolio">Portfolio</a></li>
+              <li class="topnav"><a href="#Contact">Contact Me</a></li>
             </ul>
           </div><!--navbar-collapse-->
         </div><!--container fluid-->
@@ -48,13 +50,19 @@
           <h1>Hello {{yourName}}!</h1>
         </div>
 
-        <div class="aboutMe">
+        <a name="About" id="About"></a>
+        <div class="about-me">
+          <h2 class="section-header">About Me</h2>
           <h3>I am a software engineer</h3>
           <h3>JavaScript is my forte</h3>
           <h3>Hire Me Plx</h3>
           <h3>( ‾ʖ̫‾)</h3>
         </div>
 
+        <a name="Portfolio" id="Portfolio"></a>
+        <div class="portfolio col-md-12">
+          <h2 class="section-header">Portfolio</h2>
+        </div>
         <div class="portfolio">
           <div class="col-md-6 image" data-content="scrutinize">
             <img src="./assets/Scrutinize.png" /> 
@@ -65,11 +73,19 @@
           </div>
         </div>
 
-        <div class="contactMe col-md-12">
-          <h2>Contact Me</h2>
-          <h3>egantamashiro@gmail.com</h3>
+        <!-- <a name="Contact" id="Contact"></a> -->
+        <div class="contact-me col-md-12">
+          <h2 class="section-header">Contact Me</h2>
+          <a name="Contact" id="Contact"></a>
+          <div class="contact-info-wrapper">
+            <div class="glyphicon glyphicon-envelope contact-info"></div>
+            <h3 class="contact-info">egantamashiro@gmail.com</h3>
+          </div>
         </div>
 
+        <div class="footer col-md-12">
+          <h2 class="section-header">Footer</h2>
+        </div>
         <div class="footer col-md-12">
             <div class = "github">
               <a href="https://www.github.com/etAtBat">

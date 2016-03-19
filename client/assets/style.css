@@ -5,12 +5,22 @@
   background: inherit;
 }
 
+.container-fluid {
+  background-color: white;
+}
+
 .content {
   width: 100%;
   z-index: 5;
   overflow: auto;
   padding-top:55px;
   text-align: center;
+}
+
+.section-header {
+  display: inline-block;
+  border-top: 3px solid green;
+  border-bottom: 3px solid green;
 }
 
 .largeImage {
@@ -67,6 +77,19 @@
 
 .image:hover:after, .image:hover:before {
   opacity: 1;
+}
+
+.contact-info-wrapper {
+  width: 100%;
+}
+
+.contact-info {
+  display: inline-block;
+  padding: 10px 3px;
+}
+
+.glyphicon {
+  font-size: 1.3em;
 }
 
 .footer {
