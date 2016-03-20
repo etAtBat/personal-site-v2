@@ -26,6 +26,10 @@
   padding: 0 75px;
 }
 
+.active {
+  border-top: 5px solid #D8F0E7;
+}
+
 .content {
   width: 100%;
   z-index: 5;
@@ -53,7 +57,23 @@
 .aboutMe {
 }
 
+/*portfolio*/
+
 .portfolio {
+}
+
+.project {
+  height:250px;
+  background-color: gray;
+  padding: 0;
+  border:1px solid green;
+}
+
+.project-view {
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  margin: 0 auto;
 }
 
 .image {
@@ -97,6 +117,12 @@
   opacity: 1;
 }
 
+.spacer {
+  margin-left: 0%;
+}
+
+/*end portfolio*/
+
 .contact-info-wrapper {
   width: 100%;
 }
@@ -117,6 +143,7 @@
   background-color: #D8F0E7;
   display: flex;
   justify-content: center;
+  margin-bottom:-20px;
 }
 
 .github, .linkedin {
@@ -140,8 +167,9 @@
 }
 
 .copyright {
-  height: 30px;
+  height: 25px;
   margin: 0;
+  /*margin-top:-20px;*/
 }
 
 .glyphicon-copyright-mark {
@@ -150,4 +178,9 @@
 
 .container-fluid {
   padding: 0;
+}
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
 }
