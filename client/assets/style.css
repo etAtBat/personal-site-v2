@@ -5,8 +5,25 @@
   background: inherit;
 }
 
+.container-fluid, .container-fluid a {
+  height: 55px;
+}
+
 .container-fluid {
   background-color: white;
+}
+
+.container-fluid a {
+  margin-top: 5px;
+  font-size: 17px;
+}
+
+.navbar-toggle {
+  margin-right: 35px;
+}
+
+.navbar-collapse {
+  padding: 0 75px;
 }
 
 .content {
@@ -19,8 +36,9 @@
 
 .section-header {
   display: inline-block;
-  border-top: 3px solid green;
-  border-bottom: 3px solid green;
+  border-top: 3px solid #D8E8F0;
+  border-bottom: 3px solid #D8E8F0;
+  padding: 15px 40px;
 }
 
 .largeImage {
@@ -28,7 +46,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height: 700px;
+  height: 650px;
   min-width: none;
 }
 
@@ -67,9 +85,9 @@
     color:#fff;
     z-index:1;
     bottom:0;
-    padding:4px 10px;
+    /*padding:4px 10px*/;
     text-align:center;
-    background:red;
+    /*background:red;*/
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     margin-left: -15px;
@@ -92,16 +110,20 @@
   font-size: 1.3em;
 }
 
-.footer {
-  height: 80px;
+.footer, .copyright {
+  height: 110px;
   width: 100%;
   text-align: center;
+  background-color: #D8F0E7;
+  display: flex;
+  justify-content: center;
 }
 
 .github, .linkedin {
   display: inline-block;
   width: 60px;
   height: 60px;
+  align-self: center;
 }
 
 .linkedin {
@@ -114,6 +136,16 @@
 
 .logo {
   height: 60px; 
+  border-radius: 1.33em;
+}
+
+.copyright {
+  height: 30px;
+  margin: 0;
+}
+
+.glyphicon-copyright-mark {
+  font-size: 0.8em;
 }
 
 .container-fluid {
