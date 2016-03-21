@@ -15,12 +15,14 @@
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <!--JS-->
     <script type="text/javascript" src="./js/main.js"></script>
+    <!--font-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body ng-controller="mainPageController">
     <div class="container-fluid">
       <!--navigation bar-->
-      <nav class="navbar navbar-default header">
-        <div class="container-fluid" id="navfluid">
+      <nav class="navbar navbar-default header navbar-fixed-top">
+        <div class="container" id="navfluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
             <span class="sr-only">Toggle navigation</span>
@@ -32,9 +34,9 @@
           </div><!--#navbar-header-->
           <div class="collapse navbar-collapse pull-right" id="navigationbar">
             <ul class="nav navbar-nav">
-              <li class="topnav"><a href="#About">About</a></li>
-              <li class="topnav"><a href="#Portfolio">Portfolio</a></li>
-              <li class="topnav"><a href="#Contact">Contact Me</a></li>
+              <li class="topnav"><a href=".About">About</a></li>
+              <li class="topnav"><a href=".Portfolio">Portfolio</a></li>
+              <li class="topnav"><a href=".Contact">Contact Me</a></li>
             </ul>
           </div><!--navbar-collapse-->
         </div><!--container fluid-->
@@ -42,7 +44,7 @@
 
       <div class="large-image">
         <div class=large-image-text>
-          <h2>Hello World, Egan here</h2>
+          <h1>Egan Tamashiro</h1>
           <h2>I build web applications</h2>
         </div>
       </div>
@@ -50,16 +52,23 @@
       <div class="content">
 
         <a name="About" id="About"></a>
-        <div class="about-me">
-          <h2 class="section-header">About Me</h2>
-          <h3>I am a software engineer</h3>
-          <h3>JavaScript is my forte</h3>
-          <h3>Hire Me Plx</h3>
-          <h3>( ‾ʖ̫‾)</h3>
+        <div class="about-me About">
+          <div class="col-lg-12 about-wrapper">
+            <h2 class="section-header">About Me</h2>
+          </div>
+          <div class="about-me-text col-lg-4 col-lg-offset-2">
+            <h4>I am a web developer interested in data visualization and trending technology. I am experienced with building JavaScript applications. Ideally, my applications make the world a better place.
+            </h4>
+          </div>
+          <div class="about-me-text col-lg-4">
+            <h4>I thrive in fast-paced environments and want to work with other talented engineers (who will serve as my mentors)
+            </h4>
+          </div>
+          <!-- <h3>Hire Me Plx ( ‾ʖ̫‾)</h3> -->
         </div>
 
         <a name="Portfolio" id="Portfolio"></a>
-        <div class="portfolio col-md-12">
+        <div class="portfolio col-md-12 Portfolio">
           <h2 class="section-header">Portfolio</h2>
         </div>
         <div class="col-md-10 col-centered">
@@ -79,24 +88,13 @@
             </div>
           </div>
         </div>
-      <!--   <div class="col-md-12">
-            <div class="col-sm-1 spacer"></div>
-            <div class="col-sm-2 project"></div>
-            <div class="col-sm-2 project">2</div>
-            <div class="col-sm-2 project">3</div> -->
-          <!-- <div class="col-md-6 image" data-content="scrutinize">
-            <img src="./assets/Scrutinize.png" /> 
-          </div>
-
-          <div class="col-md-6 image" data-content="geo-tweets">
-            <img src="./assets/geoTweets.png" />
-          </div> -->
-        <!-- </div> -->
 
         <div class="contact-me col-md-12">
           <h2 class="section-header">Contact Me</h2>
+        </div>
+        <div class="col-md-12">
           <a name="Contact" id="Contact"></a>
-          <div class="contact-info-wrapper">
+          <div class="contact-info-wrapper Contact">
             <div class="glyphicon glyphicon-envelope contact-info"></div>
             <a class="contact-info" href="mailto:egantamashiro@gmail.com">egantamashiro@gmail.com</a>
           </div>

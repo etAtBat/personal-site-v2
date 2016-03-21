@@ -6,7 +6,7 @@
 }
 
 .nav-name {
-  margin-left: 35px !important;
+/*  margin-left: 35px !important;*/
 }
 
 .container-fluid, .container-fluid a {
@@ -30,22 +30,29 @@
   padding: 0 75px;
 }
 
-.active {
-  border-top: 5px solid #D8F0E7;
+.topnav {
+  -webkit-transition: background-color 0.7s;
+  -moz-transition: background-color 0.7s;
+  -o-transition: background-color 0.7s;
+  -ms-transition: background-color 0.7s;
+  transition: background-color 0.7s;
+}
+
+.topnav:hover {
+  background-color: #D8F0E7;
 }
 
 .content {
   width: 100%;
   z-index: 5;
   overflow: auto;
-  padding-top:55px;
   text-align: center;
 }
 
 .section-header {
   display: inline-block;
-  border-top: 3px solid #D8E8F0;
-  border-bottom: 3px solid #D8E8F0;
+  border-top: 2px solid #D8E8F0;
+  border-bottom: 2px solid #D8E8F0;
   padding: 15px 40px;
 }
 
@@ -63,9 +70,20 @@
 
 .large-image-text {
   color: white;
+  text-align: center;
 }
 
-.aboutMe {
+/*about me*/
+
+.about-wrapper {
+  padding-top: 55px;
+}
+
+/*end about me*/
+
+.about-me-text {
+  text-align: left;
+  padding: 0 45px;
 }
 
 /*portfolio*/
@@ -80,7 +98,7 @@
 }
 
 .project-view {
-  height: 185px;
+  height: 210px;
   width: 250px;
   background-color: white;
   margin: 0 auto;
@@ -204,7 +222,6 @@ a.contact-info {
 .copyright {
   height: 25px;
   margin: 0;
-  /*margin-top:-20px;*/
 }
 
 .glyphicon-copyright-mark {
@@ -218,4 +235,8 @@ a.contact-info {
 .col-centered {
   float: none;
   margin: 0 auto;
+}
+
+* {
+  font-family: 'Open Sans';
 }
