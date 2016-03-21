@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app = "app">
+<html lang="en">
   <head>
     <!--favicon-->
     <link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
@@ -10,9 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!--Angular-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-    <script type="text/javascript" src="./js/app.js"></script>
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <!--JS-->
@@ -20,7 +17,7 @@
     <!--font-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans|Raleway' rel='stylesheet' type='text/css'>
   </head>
-  <body ng-controller="mainPageController">
+  <body>
     <div class="container-fluid">
       <!--navigation bar-->
       <nav class="navbar navbar-default header navbar-fixed-top">
@@ -44,40 +41,40 @@
         </div><!--container fluid-->
       </nav>
 
-      <div class="large-image">
+      <section class="large-image">
         <div class=large-image-text>
           <h1>Egan Tamashiro</h1>
           <h2>web applications | JavaScript | data visualization</h2>
         </div>
-      </div>
+      </section>
 
-      <div class="content">
+      <main class="content">
 
         <a name="About" id="About"></a>
-        <div class="about-me About">
+        <section class="about-me About">
           <div class="col-lg-12 about-wrapper">
             <h2 class="section-header">About Me</h2>
           </div>
           <div class="col-lg-12 about-image">
-            <div class="image-me">
+            <figure class="image-me">
               <div class="image-me-overlay"></div>
-            </div>
+            </figure>
           </div>
-          <div class="about-me-text col-lg-4 col-lg-offset-2">
+          <summary class="about-me-text col-lg-4 col-lg-offset-2">
             <h4 class="description">I am a web developer interested in data visualization and currently trending technology. I am experienced with building JavaScript applications. Ideally, my applications make the world a better place.
             </h4>
-          </div>
-          <div class="about-me-text col-lg-4">
-            <h4 class="description">I thrive in fast-paced environments and want to collaborate with other talented engineers.
+          </summary>
+          <summary class="about-me-text col-lg-4">
+            <h4 class="description">I love writing clean, semantic code, thrive in fast-paced environments, and want to collaborate with other talented engineers.
             </h4>
-          </div>
-        </div>
+          </summary>
+        </section>
 
         <a name="Portfolio" id="Portfolio"></a>
         <div class="portfolio col-md-12 Portfolio">
           <h2 class="section-header">Portfolio</h2>
         </div>
-        <div class="col-md-10 col-centered">
+        <section class="col-md-10 col-centered">
           <div class="col-sm-4 project">
               <div class="project-view scrutinize">
                 <a class="portfolio-link" href="http://www.scrutinize.tk"></a>
@@ -106,20 +103,20 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <div class="contact-me col-md-12">
           <h2 class="section-header">Contact Me</h2>
         </div>
-        <div class="col-md-12">
+        <section class="col-md-12">
           <a name="Contact" id="Contact"></a>
           <div class="contact-info-wrapper Contact">
             <div class="glyphicon glyphicon-envelope contact-info"></div>
             <a class="contact-info" href="mailto:egantamashiro@gmail.com">egantamashiro@gmail.com</a>
           </div>
-        </div>
+        </section>
 
-        <div class="footer col-md-12">
+        <footer class="footer col-md-12">
             <div class = "github">
               <a href="https://www.github.com/etAtBat">
                 <img class="logo" src="./assets/github.png"  />
@@ -130,21 +127,17 @@
                 <img class="logo" src="./assets/linkedin.png" />
               </a>
             </div>
-        </div>
-        <div class="row copyright">
+        </footer>
+        <footer class="row copyright">
           <div class="col-md-12 text-right">
             <div>
               <span class="glyphicon glyphicon-copyright-mark"></span>
               &nbsp;egan tamashiro 2016
             </div>
           </div>
-        </div>
-        <!--<div class="copyright col-md-2">
-          <span class="glyphicon glyphicon-copyright-mark"></span>
-          <p>&nbsp;egan tamashiro 2016</p>
-        </div>-->
+        </footer>
 
-      </div><!--end content div-->
+      </main><!--end content div-->
 
     </div>
   </body>
