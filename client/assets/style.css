@@ -26,6 +26,12 @@
   font-size: 17px;
 }
 
+@media (max-width: 767px) {
+  .navbar-header {
+    outline: 1px solid #e7e7e7;;
+  }
+}
+
 .navbar-toggle {
   margin-right: 35px;
 }
