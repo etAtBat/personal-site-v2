@@ -1,5 +1,5 @@
 * {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', "sans-serif";
 }
 
 .header {
@@ -64,6 +64,7 @@
   border-top: 2px solid #D8E8F0;
   border-bottom: 2px solid #D8E8F0;
   padding: 15px 45px;
+  font-family: "Raleway", "sans-serif";
 }
 
 .large-image {
@@ -94,6 +95,43 @@
 .about-me-text {
   text-align: left;
   padding: 0 45px;
+}
+
+.description {
+  line-height: 1.4;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.image-me, .image-me-overlay {
+  height: 150px;
+  width: 150px;
+  border-radius: 4.5em;
+}
+
+
+.image-me {
+  background-image: url("./Egan_Tamashiro.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.image-me-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: gray;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.image-me-overlay:hover {
+  opacity: 0.25;
 }
 
 /*portfolio*/
@@ -215,8 +253,8 @@ a.contact-info {
 }
 
 .logo {
-  height: 60px; 
-  border-radius: 1.33em;
+  height: 50px; 
+  border-radius: 1.10em;
 }
 
 .copyright {
