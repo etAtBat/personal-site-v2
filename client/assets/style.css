@@ -1,3 +1,7 @@
+* {
+  font-family: 'Open Sans';
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -53,7 +57,7 @@
   display: inline-block;
   border-top: 2px solid #D8E8F0;
   border-bottom: 2px solid #D8E8F0;
-  padding: 15px 40px;
+  padding: 15px 45px;
 }
 
 .large-image {
@@ -97,13 +101,45 @@
   padding: 20px 0 0 0;
 }
 
-.project-view {
+.portfolio-description, .project-view {
   height: 210px;
   width: 250px;
+}
+
+.project-view {
   background-color: white;
   margin: 0 auto;
   z-index: 2;
   background-size: cover;
+  position: relative;
+}
+
+.portfolio-description {
+  background-color: #D8F0EF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  z-index:5;
+  cursor: pointer;
+}
+
+.portfolio-description:hover {
+  opacity: 1;
+}
+
+.portfolio-description-title {
+  font-size: 22px;
+}
+
+.portfolio-description-text {
+  font-size: 15px;
 }
 
 .scrutinize {
@@ -125,47 +161,6 @@ a.portfolio-link {
   height: 100%;
   width: 100%;
   text-decoration: none;
-}
-
-.image {
-  position: relative;
-}
-
-.image img {
-  width: 100%;
-  vertical-align: top;
-}
-
-.image:after, .image:before {
-    position:absolute;
-    opacity:0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-}
-
-.image:after {
-    content:'\A';
-    width:100%; height:100%;
-    top:0; left:0;
-    background:rgba(0,0,0,0.6);
-}
-
-.image:before {
-    content: attr(data-content);
-    width:100%;
-    color:#fff;
-    z-index:1;
-    bottom:0;
-    /*padding:4px 10px*/;
-    text-align:center;
-    /*background:red;*/
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    margin-left: -15px;
-}
-
-.image:hover:after, .image:hover:before {
-  opacity: 1;
 }
 
 .spacer {
@@ -235,8 +230,4 @@ a.contact-info {
 .col-centered {
   float: none;
   margin: 0 auto;
-}
-
-* {
-  font-family: 'Open Sans';
 }
