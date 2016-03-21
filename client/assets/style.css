@@ -65,7 +65,7 @@
 .project {
   height:250px;
   /*background-color: gray;*/
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 .project-view {
@@ -149,9 +149,11 @@ a.portfolio-link {
   width: 100%;
 }
 
-.contact-info {
+a.contact-info {
   display: inline-block;
   padding: 10px 3px;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .glyphicon {
