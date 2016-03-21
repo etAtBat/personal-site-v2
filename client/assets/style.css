@@ -5,6 +5,10 @@
   background: inherit;
 }
 
+.nav-name {
+  margin-left: 35px !important;
+}
+
 .container-fluid, .container-fluid a {
   height: 55px;
 }
@@ -45,13 +49,20 @@
   padding: 15px 40px;
 }
 
-.largeImage {
+.large-image {
   background-image:url(golden-gate-bridge-39929-1920x1200.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   height: 650px;
   min-width: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.large-image-text {
+  color: white;
 }
 
 .aboutMe {
