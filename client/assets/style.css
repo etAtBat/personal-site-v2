@@ -24,7 +24,7 @@
 
 @media (max-width: 767px) {
   .navbar-header {
-    outline: 1px solid #e7e7e7;;
+    outline: 1px solid #e7e7e7;
   }
 }
 
@@ -75,13 +75,19 @@ a.navbar-brand.nav-name, .topnav a {
   background-image:url(golden-gate-bridge-39929-1920x1200.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   height: 650px;
   min-width: none;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 767px) {
+  .large-image {
+    background-attachment: scroll;
+  }
 }
 
 .large-image-text, .large-image-description, .large-image-name {
