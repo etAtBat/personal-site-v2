@@ -24,4 +24,13 @@ $(document).ready(function () {
     return false;
   });
 
+  //need fake fixed background position as fixed does not work with iphones
+  var $window = $(window);
+  var $bigImageText = $(".large-image-text");
+  var $bigImageTextTop = $($bigImageText).offset().top;
+
+  $window.on("scroll", function() {
+    $bigImageText.attr("top", $bigImageTextTop - $window.scrollTop())
+  });
+
 });

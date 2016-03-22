@@ -75,7 +75,8 @@ a.navbar-brand.nav-name, .topnav a {
   background-image:url(golden-gate-bridge-39929-1920x1200.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  background-size: cover;
   height: 650px;
   min-width: none;
   display: flex;
