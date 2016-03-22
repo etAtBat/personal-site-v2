@@ -9,12 +9,8 @@
   background: inherit;
 }
 
-.nav-name {
-/*  margin-left: 35px !important;*/
-}
-
 .container-fluid, .container-fluid a {
-  height: 55px;
+  height: 62px;
 }
 
 .container-fluid {
@@ -38,6 +34,14 @@
 
 .navbar-collapse {
   padding: 0 75px;
+}
+
+a.navbar-brand.nav-name, .topnav a {
+  font-size: 21px;
+}
+
+.topnav a {
+  margin-right: 5px;
 }
 
 .topnav {
@@ -92,14 +96,14 @@
 /*about me*/
 
 .about-wrapper {
-  padding-top: 55px;
+  padding-top: 30px;
 }
 
 /*end about me*/
 
 .about-me-text {
   text-align: left;
-  padding: 0 45px;
+  padding: 0 55px;
 }
 
 .description {
