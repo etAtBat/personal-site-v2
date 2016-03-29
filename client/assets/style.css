@@ -72,18 +72,6 @@ a.navbar-brand.nav-name, .topnav a {
   font-family: "Raleway", "sans-serif";
 }
 
-/*.large-image {
-  background-image:url(golden-gate-bridge-39929-1920x1200.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 650px;
-  min-width: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}*/
 .large-image-text {
   margin-top: 300px;
 }
