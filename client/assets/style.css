@@ -28,11 +28,11 @@
   height: 50%;
 }
 
-
 /**
     (default css)
   small screen sizes
 **/
+
 * {
   margin: 0px;
   padding: 0px;
@@ -79,17 +79,37 @@ section {
 }
 
 .menu-bar {
-  height: 5px;
+  height: 4px;
   width: 70%;
   border-radius: 0.05em;
   margin-left: 15%;
-  margin-top: 14%;
+  margin-top: 11%;
   background-color: black;
 }
 
 .menu-bar-top {
-  margin-top: 24%;
+  margin-top: 29%;
 }
+
+/***************
+    ABOUT ME
+***************/
+.about-me {
+
+}
+/***************
+   PORTFOLIO
+***************/
+.portfolio {
+  background-color: purple;
+}
+/***************
+  CONTACT ME
+***************/
+.contact-me {
+  background-color: teal;
+}
+
 /**
   end small screen sizes
 **/
