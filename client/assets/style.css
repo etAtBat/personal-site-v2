@@ -66,10 +66,14 @@ section {
   margin-top: 72px;
   transform: translateX(230px);
   transition: transform 0.8s ease;
+  height: 100vh;
 }
 
 .main-navigation ul li {
   list-style: none;
+}
+
+.main-navigation ul li, .main-navigation {
   background-color: red;
 }
 
@@ -143,6 +147,33 @@ section {
 ***************/
 .portfolio {
   background-color: purple;
+  height: 820px;
+}
+
+.portfolio-entries {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-entry {
+  margin-top: 20px;
+  height: 220px;
+  width: 300px;
+  background-color: grey;
+  align-self: center;
+  background-size: cover;
+}
+
+.scrutinize {
+  background-image: url("./scrutinize.png");
+}
+
+.geo-tweet {
+  background-image: url("./geoTweets.png");
+}
+
+.map-app {
+  background-image: url("./MyPaths.png")
 }
 
 /***************
@@ -157,6 +188,16 @@ footer {
   justify-content: center;
   width: 100%;
   height: 50px;
+}
+
+.copyright {
+  padding-top: 15px;
+  height: 30px;
+  justify-content: flex-end;
+}
+
+.copyright > span {
+  margin-right: 40px;
 }
 
 .contact-me, .icon {

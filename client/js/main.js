@@ -29,10 +29,10 @@ $(document).ready(function () {
   });
 
   //scrolling to any part of the page from navigation bar
-  var navHeight = $(".navbar-header").height(); 
+  var navHeight = $(".navigation-bar").height(); 
 
-  $('.topnav a').click(function(){
-
+  $('.main-navigation a').click(function(){
+    console.log('clicked')
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top - navHeight
     }, 500);

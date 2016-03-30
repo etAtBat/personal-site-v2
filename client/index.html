@@ -30,25 +30,48 @@
         <div class="navigation-area">
           <nav class="main-navigation">
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Portfolio">Portfolio</a></li>
+              <li><a href="#Contact">Contact</a></li>
             </ul>
           </nav>
         </div>
       </div>
       <div class="content-container">
-        <section class="about-me">
+        <section class="about-me" id="About">
           <header>
-            <h2>About me</h2>
+            <h2>About</h2>
           </header>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="Portfolio">
           <header>
             <h2>Portfolio</h2>
           </header>
+          <div class="portfolio-entries">
+            <article class="portfolio-entry scrutinize">
+              <a class="portfolio-link" href="http://www.scrutinize.tk"></a>
+              <div class="portfolio-description">
+                <p class="portfolio-description-title">Scrutinize</p>
+                <p class="portfolio-description-text">A UI/UX analysis tool</p>
+              </div>
+            </article>
+            <article class="portfolio-entry geo-tweet">
+              <a class="portfolio-link" href="http://geo-tweet.herokuapp.com"></a>
+              <div class="portfolio-description">
+                <p class="portfolio-description-title">Geo-Tweet</p>
+                <p class="portfolio-description-text">Data visualization for tweets</p>
+              </div>
+            </article>
+            <article class="portfolio-entry map-app">
+              <a class="portfolio-link" href="http://mypaths.herokuapp.com"></a>
+              <div class="portfolio-description">
+                <p class="portfolio-description-title">MyPaths</p>
+                <p class="portfolio-description-text">Attach memories to places</p>
+              </div>
+            </article>
+          </div>
         </section>
-        <footer class="contact-me">
+        <footer class="contact-me" id="Contact">
           <h2>Contact me</h2>
         </footer>
         <footer class="contact-me logo">
@@ -62,8 +85,8 @@
             <img src="./assets/linkedin.png" />
           </div>
         </footer>
-        <footer class="contact-me">
-          
+        <footer class="contact-me copyright">
+          <span>&copy egan tamashiro 2016</span>
         </footer>
       </div>
     </main>
