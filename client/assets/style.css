@@ -1,5 +1,5 @@
 @font-face {
-  font-family: instant_nirvana;
+  font-family: appleberry;
   src: url("./appleberry_with_cyrillic.ttf");
 }
 
@@ -47,7 +47,11 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: instant_nirvana;
+  font-family: 'Open Sans', "sans-serif";
+}
+
+.basic-info > h2, .contact-me > h2, .copyright > span {
+  font-family: appleberry;
 }
 
 .main-container {
@@ -75,9 +79,10 @@ section {
 
 .main-navigation {
   margin-top: 72px;
-  transform: translateX(230px);
+  transform: translateX(215px);
   transition: transform 0.8s ease;
   height: 100vh;
+  z-index: 2;
 }
 
 .main-navigation ul li {
@@ -103,14 +108,16 @@ section {
   height: 45px;
   width: 47px;
   margin-left: auto;
-  background-color: gray;
+  background-color: white;
   border-radius: 0.7em;
   align-self: center;
   margin-right: -170px;
   z-index: 3;
+  transition: all 0.6s;
 }
 
 .menu-icon:hover {
+  background-color: #D8D8D8;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -149,7 +156,48 @@ section {
     ABOUT ME
 ***************/
 .about-me {
+  display: flex;
+  flex-direction: column;
+}
 
+.about-me > header {
+  width: 100%;
+}
+
+.picture_me {
+  height: 150px;
+  width: 150px;
+  align-self: center;
+  border-radius: 2.2em;
+  background-image: url("./Egan_Tamashiro.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  margin-top: 22px;
+}
+
+.picture-me-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  opacity: 0;
+  transition: all 0.65s;
+  -webkit-transition: all 0.65s;
+}
+
+.picture-me-overlay:hover {
+  opacity: 0.3;
+}
+
+.description-me {
+  margin-top: 15px;
+}
+
+.description-me-left > p, .description-me-right > p {
+  line-height: 130%;
 }
 
 /**************
@@ -321,12 +369,30 @@ footer {
       transition: all 0.5s;
     }
 
+    .about-me {
+      height: 560px;
+    }
+
     .about-me > header > h2 > a > .arrow-up {
       top: -177px;
     }
 
     .arrow-up:hover {
       opacity: 1;
+    }
+
+    .description-me {
+      height: 300px;
+      width: 100%;
+      background-color: blue;
+      display: flex;
+      justify-content: center; 
+    }
+
+    .description-me-left, .description-me-right {
+      background-color: red;
+      width: 40%;
+      margin: 20px;
     }
 
 /*    .menu-icon {
@@ -347,12 +413,12 @@ footer {
     }*/
 
     .portfolio {
-      height: 1160px;
+      height: 1040px;
     }
 
     .portfolio-entry {
-      height: 300px;
-      width: 400px;
+      height: 270px;
+      width: 390px;
     }
 
 }
@@ -387,6 +453,10 @@ footer {
 
   .portfolio > header {
     padding-bottom: 35px;
+  }
+
+  .description-me {
+    height: 200px;
   }
 }
 /**

@@ -58,10 +58,10 @@ $(document).ready(function () {
      return false;
   });
 
-  $('.about-me a').click(function(){
+  $('.about-title a').click(function(){
     $('html, body').animate({
          scrollTop: $( $(this).attr('href') ).offset().top - navHeight
-    }, 300);
+    }, 400);
      return false;
   });
 
