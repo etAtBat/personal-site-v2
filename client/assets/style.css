@@ -19,9 +19,39 @@ section {
 }
 
 .navigation-bar {
-  height: 100px;
+  height: 85px;
   width: 100%;
   background-color: white;
+  display: flex;
+}
+
+.menu-icon {
+  height: 55px;
+  width: 55px;
+  margin-left: auto;
+  margin-right: 20px;
+  background-color: red;
+  border-radius: 0.7em;
+  align-self: center;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-bar {
+  height: 5px;
+  width: 70%;
+  border-radius: 0.05em;
+  margin-left: 15%;
+  margin-top: 14%;
+  background-color: black;
+}
+
+.menu-bar-top {
+  margin-top: 24%;
 }
 /**
   end small screen sizes

@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+  //makes navbar stick to the top of the page and detach itself by detecting scroll
   $(window).scroll(function(){
     if(($('.container').offset().top - $(window).scrollTop()) - $('.navigation-bar').height() <= 0) {
       $('.navigation-bar').css({
