@@ -28,6 +28,12 @@ $(document).ready(function () {
     $('.main-navigation').toggleClass('open');
   });
 
+  //toggling effect on portfolio entries
+  $('.portfolio-link').hover(function () {
+    $(this).next().toggleClass('portfolio-entry-hover');
+  });
+
+
   //scrolling to any part of the page from navigation bar
   var navHeight = $(".navigation-bar").height(); 
 

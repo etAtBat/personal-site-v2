@@ -1,6 +1,6 @@
 @font-face {
   font-family: instant_nirvana;
-  src: url("./Instant Nirvana.ttf");
+  src: url("./appleberry_with_cyrillic.ttf");
 }
 
 .basic-info {
@@ -36,6 +36,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: instant_nirvana;
 }
 
 .main-container {
@@ -46,7 +47,6 @@
   height: 100vh;
   width: 100%;
   background-color: lightblue;
-  font-family: instant_nirvana;
   font-size:40px;
 }
 
@@ -129,7 +129,6 @@ section {
 }
 
 .about-me > header > h2 , .portfolio > header > h2, .contact-me > h2 {
-  font-family: instant_nirvana;
   font-size: 38px;
   width: 200px;
   text-align: center;
@@ -162,6 +161,53 @@ section {
   background-color: grey;
   align-self: center;
   background-size: cover;
+  position: relative;
+}
+
+.portfolio-description {
+  background-color: #D8F0EF;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.8s;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.portfolio-entry-hover {
+  opacity: 1;
+}
+/*.portfolio-link:hover, .portfolio-description {
+  opacity: 1;
+}*/
+
+.portfolio-description > div {
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+.portfolio-description-title {
+  margin-top: 25%;
+}
+
+.portfolio-description-title, .portfolio-description-text {
+  align-self: center;
+}
+
+a.portfolio-link {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
 }
 
 .scrutinize {
