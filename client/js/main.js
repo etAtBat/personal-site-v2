@@ -47,8 +47,22 @@ $(document).ready(function () {
    $('.mail-icon-background a').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top - navHeight
-    }, 500);
+    }, 1600);
     return false;
+  });
+
+  $('.section-title a').click(function(){
+    $('html, body').animate({
+         scrollTop: $( $(this).attr('href') ).offset().top - navHeight
+    }, 300);
+     return false;
+  });
+
+  $('.about-me a').click(function(){
+    $('html, body').animate({
+         scrollTop: $( $(this).attr('href') ).offset().top - navHeight
+    }, 300);
+     return false;
   });
 
 

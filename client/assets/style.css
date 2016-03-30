@@ -141,6 +141,10 @@ section {
   text-align: center;
 }
 
+.about-me > header > h2 {
+  position: relative;
+}
+
 /***************
     ABOUT ME
 ***************/
@@ -154,6 +158,10 @@ section {
 .portfolio {
   background-color: purple;
   height: 820px;
+}
+
+.portfolio > header > h2 {
+  position: relative;
 }
 
 .portfolio-entries {
@@ -190,9 +198,6 @@ section {
 .portfolio-entry-hover {
   opacity: 1;
 }
-/*.portfolio-link:hover, .portfolio-description {
-  opacity: 1;
-}*/
 
 .portfolio-description > div {
   width: 100%;
@@ -259,6 +264,7 @@ footer {
 
 .contact-me > h2 {
   display: block;
+  position: relative;
 }
 
 .icon, .mail {
@@ -302,6 +308,27 @@ footer {
       background-color: lightgreen;
     }
 
+    .arrow-up {
+      top: -105px;
+      left: 30px;
+      width: 0; 
+      height: 0; 
+      border-left: 70px solid transparent;
+      border-right: 70px solid transparent;
+      border-bottom: 70px solid black;
+      position: absolute;
+      opacity: 0.5;
+      transition: all 0.5s;
+    }
+
+    .about-me > header > h2 > a > .arrow-up {
+      top: -177px;
+    }
+
+    .arrow-up:hover {
+      opacity: 1;
+    }
+
 /*    .menu-icon {
       display: none;
     }
@@ -320,7 +347,7 @@ footer {
     }*/
 
     .portfolio {
-      height: 1100px;
+      height: 1160px;
     }
 
     .portfolio-entry {
@@ -355,7 +382,7 @@ footer {
   }
 
   .portfolio {
-    height: 440px;
+    height: 490px;
   }
 
   .portfolio > header {
