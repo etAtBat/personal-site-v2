@@ -64,7 +64,7 @@ section {
 
 .main-navigation {
   margin-top: 72px;
-  transform: translateY(-260px);
+  transform: translateX(230px);
   transition: transform 0.8s ease;
 }
 
@@ -81,7 +81,7 @@ section {
 }
 
 .main-navigation.open {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .menu-icon {
@@ -92,6 +92,7 @@ section {
   border-radius: 0.7em;
   align-self: center;
   margin-right: -170px;
+  z-index: 3;
 }
 
 .menu-icon:hover {
