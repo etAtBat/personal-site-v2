@@ -2,22 +2,22 @@ $(document).ready(function () {
 
   //makes navbar stick to the top of the page and detach itself by detecting scroll
   $(window).scroll(function(){
-    if(($('.container').offset().top - $(window).scrollTop()) - $('.navigation-bar').height() <= 0) {
+    if(($('.content-container').offset().top - $(window).scrollTop()) - $('.navigation-bar').height() <= 0) {
       $('.navigation-bar').css({
         'position' : 'fixed',
         'z-index' : 2,
         'top' : 0
       });
-      $('.container').css({
+      $('.content-container').css({
         'margin-top' : $('.navigation-bar').height()
       });
     } else {
       $('.navigation-bar').css({
         'position' : 'static',
-        'z-index' : 0,
+        'z-index' : 2,
         'top' : 'auto'
       });
-      $('.container').css({
+      $('.content-container').css({
         'margin-top': 0
       })
     }
