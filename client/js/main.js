@@ -25,7 +25,6 @@ $(document).ready(function () {
 
   //toggling the navigation list
   $('.menu-icon').on('click', function () {
-    console.log('clicked')
     $('.main-navigation').toggleClass('open');
   });
 
