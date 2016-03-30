@@ -38,7 +38,13 @@ $(document).ready(function () {
   var navHeight = $(".navigation-bar").height(); 
 
   $('.main-navigation a').click(function(){
-    console.log('clicked')
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top - navHeight
+    }, 500);
+    return false;
+  });
+
+   $('.mail-icon-background a').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top - navHeight
     }, 500);
