@@ -59,15 +59,15 @@
 }
 
 .basic-info-container {
-  height: 100vh;
+  height: 575px;
   width: 100%;
-  background-color: lightgreen;
+  background-color: #90EAEE;
   font-size:40px;
 }
 
 section {
   height: 100vh;
-  background-color: #90EEB6;
+  background-color: #DCDFEA;
 }
 
 .navigation-bar {
@@ -90,7 +90,12 @@ section {
 }
 
 .main-navigation ul li, .main-navigation {
-  background-color: red;
+  background-color: #635555;
+  transition: all 0.5s ease;
+}
+
+.main-navigation ul li:hover {
+  background-color: #2F2929;
 }
 
 .main-navigation ul li a {
@@ -186,6 +191,7 @@ section {
   opacity: 0;
   transition: all 0.65s;
   -webkit-transition: all 0.65s;
+  border-radius: 2.2em;
 }
 
 .picture-me-overlay:hover {
@@ -196,15 +202,19 @@ section {
   margin-top: 15px;
 }
 
+.description-me-left, .description-me-right {
+  padding: 20px;
+}
+
 .description-me-left > p, .description-me-right > p {
-  line-height: 130%;
+  line-height: 145%;
 }
 
 /**************
    PORTFOLIO
 ***************/
 .portfolio {
-  background-color: #90EEEA;
+  background-color: #D4E8E8;
   height: 820px;
 }
 
@@ -231,7 +241,7 @@ section {
   background-color: #D8F0EF;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: black;
   height: 100%;
   width: 100%;
   text-align: center;
@@ -255,6 +265,7 @@ section {
 
 .portfolio-description-title {
   margin-top: 25%;
+  font-size: 30px;
 }
 
 .portfolio-description-title, .portfolio-description-text {
@@ -381,14 +392,13 @@ footer {
     .description-me {
       height: 300px;
       width: 100%;
-      background-color: #90EEB6;
+      background-color: #DCDFEA;
       display: flex;
       justify-content: center; 
     }
 
     .description-me-left, .description-me-right {
-      padding: 20px;
-      background-color: #90EEB6;
+      background-color: #DCDFEA;
       width: 40%;
       margin: 20px;
     }
@@ -452,6 +462,10 @@ footer {
 
   .description-me {
     height: 200px;
+  }
+
+  .basic-info-container {
+    height: 545px;
   }
 }
 /**
