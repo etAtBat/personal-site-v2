@@ -3,6 +3,11 @@
   src: url("./appleberry_with_cyrillic.ttf");
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .basic-info {
   margin-top: 40vh;
   position: fixed;
